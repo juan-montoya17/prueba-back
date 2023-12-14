@@ -11,12 +11,13 @@ export default {
       {
         name: 'status',
         title: 'estado',
-        preview: {
-            select: {
-              pending: 'pendiente',
-              done: 'hecho',
-            },
-          },
+        initialValue: 'pending',
+        options: {
+          list: [
+            { title: 'Pendiente', value: 'pending' },
+            { title: 'Hecho', value: 'done' }
+          ]
+        },
         type: 'string',
       }
     ]
